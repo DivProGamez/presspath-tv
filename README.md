@@ -2,12 +2,27 @@
 
 **Every press counts. Every path gets smarter.**
 
-PressPath TV is a family TV app for Android TV and Fire OS: Memory Pairs, flashcards, a Navigation Lab, Progress and Settings. It measures navigation **inside its own interface**. Five guided tasks record the real remote presses, backtracks, edge misses and seconds each path takes. Two published, deterministic rules (R1, R2) then suggest reversible improvements, and a Before / After view compares real measured runs.
+PressPath TV is a family TV app for Android TV: Memory Pairs, flashcards, a Navigation Lab, Progress and Settings. It measures navigation **inside its own interface**. Five guided tasks record the real remote presses, backtracks, edge misses and seconds each path takes. Two published, deterministic rules (R1, R2) then suggest reversible improvements, and a Before / After view compares real measured runs.
 
 It is an original implementation, written from scratch. The two Stitch exports and the two reference boards were used only as the visual reference.
 
 - Offline, with no accounts and no network permission. Everything is stored in one `localStorage` key (`presspath.v1`) on the device.
 - No machine learning, no composite scores, no heatmaps, no invented analytics. When data is missing, the UI shows **N/A**.
+
+## Platform support
+
+| Environment | Status |
+| --- | --- |
+| Android TV / Google TV **emulator** (Google TV system image, API 36, x86, System WebView 145) | **Verified.** The release APK was installed and driven with D-pad key events: 24 / 24 checks ([docs/REMOTE_QA.md](docs/REMOTE_QA.md)). |
+| Desktop Chrome at 1920×1080 and 1280×720 | **Verified.** 37 / 37 keyboard and gamepad checks ([docs/TEST_REPORT.md](docs/TEST_REPORT.md)). |
+| Amazon Fire TV (Fire OS) | **Not tested.** The APK is built to be compatible (minSdk 22, no Google Play services or AndroidX, leanback launcher, no permissions), but it has not been run on Fire TV hardware or on Amazon's emulator. |
+| Vega OS | **Not supported.** Vega uses a different runtime and package format. |
+
+## Release
+
+- APK: `PressPathTV-1.0.0-release.apk` (package `com.presspath.tv`, versionName 1.0.0, minSdk 22, targetSdk 35), attached to the GitHub release `v1.0.0`.
+- SHA-256: `00b3b3aa0706caef709b6a3590006f9a1e9dbc4b181b76c54efb844ad1240027`
+- The APK was built from this repository's `web/` and `android/` sources by `npm run build:apk`. Package details and signature verification are in [dist/apk-info.txt](dist/apk-info.txt).
 
 ## Project layout
 
@@ -26,7 +41,7 @@ web/                    the app (plain HTML/CSS/JS, no build step, no dependenci
     decks.js            Letters, Numbers, Everyday Science (10 cards each)
   js/ui/art.js          original vector illustrations and glyphs (inline SVG)
   js/app.js             screens, focus, input dispatcher, task flow, overlays
-android/                Android TV / Fire OS WebView wrapper (new, Java, no AndroidX)
+android/                Android TV WebView wrapper (new, Java, no AndroidX; Fire OS untested)
   app/src/main/AndroidManifest.xml   leanback launcher, banner, NO INTERNET permission
   app/src/main/java/com/presspath/tv/MainActivity.java
   app/build.gradle …    Gradle files for Android Studio users (see "Build" below)

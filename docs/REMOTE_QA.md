@@ -54,5 +54,5 @@
 ## Limitations
 
 - **Not tested on Fire TV hardware or Amazon's Fire TV emulator.** Fire OS compatibility is therefore unverified.
-- The Fire TV remote's Menu, Home and media keys are left to the system and not used by the app.
+- Menu, Home and media keys are left to the system and not used by the app.
 - Seconds measured by automation reflect scripted key pacing, not human timing.

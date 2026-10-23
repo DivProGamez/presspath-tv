@@ -7,3 +7,7 @@ android/local.properties
 android/keystore/
 # extracted Stitch reference exports (source zips live one folder up)
 design-ref/
+# local archives (may contain the signing key)
+*.zip
+# demo video work files (final video is published as a release asset)
+release/video/work/
