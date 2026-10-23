@@ -1,0 +1,139 @@
+1
+00:00:00,500 --> 00:00:06,269
+This is PressPath TV, a family app for Android TV that measures navigation inside its own interface.
+
+2
+00:00:06,519 --> 00:00:12,447
+Everything you see is the real release APK on an Android TV emulator, controlled only with D-pad presses.
+
+3
+00:00:13,447 --> 00:00:18,535
+Home offers the Navigation Lab, Memory Pairs, Flashcards, Progress and Settings.
+
+4
+00:00:18,785 --> 00:00:22,170
+The evidence card is empty, because nothing has been measured yet.
+
+5
+00:00:23,170 --> 00:00:29,320
+The Navigation Lab runs five guided tasks and records real presses, backtracks, edge misses and seconds.
+
+6
+00:00:29,570 --> 00:00:33,051
+Task two: open Science flashcards and reveal an answer.
+
+7
+00:00:33,051 --> 00:00:35,076
+The live bar counts every press.
+
+8
+00:00:36,070 --> 00:00:38,893
+7 presses, saved as baseline run 1.
+
+9
+00:00:40,093 --> 00:00:42,315
+A second baseline run of the same task.
+
+10
+00:00:48,093 --> 00:00:49,177
+7 presses.
+
+11
+00:00:50,677 --> 00:00:55,465
+Rule R1 fires when a task needs five or more presses in at least two baseline runs.
+
+12
+00:00:55,715 --> 00:00:58,901
+The preview cites both runs before anything changes.
+
+13
+00:00:58,901 --> 00:01:00,556
+The tiles keep their order.
+
+14
+00:01:00,556 --> 00:01:02,394
+Only a Home shortcut is added.
+
+15
+00:01:05,777 --> 00:01:06,345
+Apply.
+
+16
+00:01:08,645 --> 00:01:12,580
+Now the adaptive run: up to the new shortcut, OK, and reveal.
+
+17
+00:01:13,645 --> 00:01:14,647
+3 presses.
+
+18
+00:01:15,847 --> 00:01:17,854
+Next, open Before and After.
+
+19
+00:01:19,947 --> 00:01:23,946
+It compares the medians of the recorded runs: 7 presses down to 3.
+
+20
+00:01:24,947 --> 00:01:29,255
+That is −4, or −57%, measured on this device.
+
+21
+00:01:30,455 --> 00:01:31,936
+Every change is reversible.
+
+22
+00:01:32,455 --> 00:01:35,684
+Undo removes the shortcut, and the recorded runs are kept.
+
+23
+00:01:39,891 --> 00:01:45,679
+Memory Pairs is fully playable with the remote: 12 cards and 6 pairs, with pairs found and moves.
+
+24
+00:01:45,991 --> 00:01:47,698
+There is no timer and no score.
+
+25
+00:01:50,398 --> 00:01:53,706
+Flashcards cover Letters, Numbers and Everyday Science.
+
+26
+00:01:53,956 --> 00:01:57,184
+OK reveals the answer, and Next moves to the next card.
+
+27
+00:01:58,284 --> 00:02:00,247
+Back returns focus to where you were.
+
+28
+00:02:03,884 --> 00:02:07,978
+Settings provides High Contrast, with a yellow focus ring on pure black.
+
+29
+00:02:08,284 --> 00:02:13,417
+Large Text enlarges the interface text, and Reduce Motion turns off zoom and transitions.
+
+30
+00:02:17,284 --> 00:02:22,516
+Clear All Local Data always asks for confirmation first, so nothing is deleted by accident.
+
+31
+00:02:23,716 --> 00:02:29,149
+PressPath TV works offline, requests no permissions, and keeps its data on the device.
+
+32
+00:02:29,399 --> 00:02:32,086
+It was verified on an Android TV emulator.
+
+33
+00:02:32,086 --> 00:02:34,837
+It has not been tested on Fire TV hardware.
+
+34
+00:02:35,087 --> 00:02:36,438
+Every press counts.
+
+35
+00:02:36,438 --> 00:02:38,144
+Every path gets smarter.

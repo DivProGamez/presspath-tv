@@ -11,3 +11,4 @@ design-ref/
 *.zip
 # demo video work files (final video is published as a release asset)
 release/video/work/
+release/video/*.mp4

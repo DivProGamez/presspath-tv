@@ -1,0 +1,59 @@
+{
+  "recordedAt": "2026-10-23T03:05:35.264Z",
+  "apkSha256": "00b3b3aa0706caef709b6a3590006f9a1e9dbc4b181b76c54efb844ad1240027",
+  "device": "AOSP TV on x86 · API 36",
+  "runs": [
+    {
+      "task": "science",
+      "phase": "baseline",
+      "presses": 7,
+      "backtracks": 0,
+      "edgeMisses": 0,
+      "seconds": 4.8,
+      "run": "r1"
+    },
+    {
+      "task": "science",
+      "phase": "baseline",
+      "presses": 7,
+      "backtracks": 0,
+      "edgeMisses": 0,
+      "seconds": 3.6,
+      "run": "r2"
+    },
+    {
+      "task": "science",
+      "phase": "adaptive",
+      "presses": 3,
+      "backtracks": 0,
+      "edgeMisses": 0,
+      "seconds": 2.2,
+      "run": "r3"
+    }
+  ],
+  "log": [
+    "10-23 04:04:18.188  2906  2906 I PressPathTV: [PP] boot {\"runs\":0,\"adaptations\":0,\"native\":true}",
+    "10-23 04:04:27.490  2906  2906 I PressPathTV: [PP] splash:dismissed",
+    "10-23 04:04:47.802  2906  2906 I PressPathTV: [PP] task:start {\"task\":\"science\",\"phase\":\"baseline\"}",
+    "10-23 04:04:52.824  2906  2906 I PressPathTV: [PP] cards:open {\"deck\":\"science\"}",
+    "10-23 04:04:54.197  2906  2906 I PressPathTV: [PP] cards:reveal {\"deck\":\"science\",\"card\":0}",
+    "10-23 04:04:54.197  2906  2906 I PressPathTV: [PP] task:complete {\"task\":\"science\",\"phase\":\"baseline\",\"presses\":7,\"backtracks\":0,\"edgeMisses\":0,\"seconds\":4.8,\"run\":\"r1\"}",
+    "10-23 04:05:03.038  2906  2906 I PressPathTV: [PP] task:start {\"task\":\"science\",\"phase\":\"baseline\"}",
+    "10-23 04:05:06.863  2906  2906 I PressPathTV: [PP] cards:open {\"deck\":\"science\"}",
+    "10-23 04:05:07.824  2906  2906 I PressPathTV: [PP] cards:reveal {\"deck\":\"science\",\"card\":0}",
+    "10-23 04:05:07.825  2906  2906 I PressPathTV: [PP] task:complete {\"task\":\"science\",\"phase\":\"baseline\",\"presses\":7,\"backtracks\":0,\"edgeMisses\":0,\"seconds\":3.6,\"run\":\"r2\"}",
+    "10-23 04:05:27.716  2906  2906 I PressPathTV: [PP] adapt:apply {\"id\":\"a1\",\"rule\":\"R1\",\"task\":\"science\",\"target\":null}",
+    "10-23 04:05:32.118  2906  2906 I PressPathTV: [PP] task:start {\"task\":\"science\",\"phase\":\"adaptive\"}",
+    "10-23 04:05:35.095  2906  2906 I PressPathTV: [PP] shortcut {\"task\":\"science\"}",
+    "10-23 04:05:35.097  2906  2906 I PressPathTV: [PP] cards:open {\"deck\":\"science\"}",
+    "10-23 04:05:36.312  2906  2906 I PressPathTV: [PP] cards:reveal {\"deck\":\"science\",\"card\":0}",
+    "10-23 04:05:36.312  2906  2906 I PressPathTV: [PP] task:complete {\"task\":\"science\",\"phase\":\"adaptive\",\"presses\":3,\"backtracks\":0,\"edgeMisses\":0,\"seconds\":2.2,\"run\":\"r3\"}",
+    "10-23 04:05:57.225  2906  2906 I PressPathTV: [PP] adapt:undo {\"id\":\"a1\"}",
+    "10-23 04:06:22.166  2906  2906 I PressPathTV: [PP] cards:open {\"deck\":\"numbers\"}",
+    "10-23 04:06:23.556  2906  2906 I PressPathTV: [PP] cards:reveal {\"deck\":\"numbers\",\"card\":0}",
+    "10-23 04:06:33.849  2906  2906 I PressPathTV: [PP] pref {\"key\":\"highContrast\",\"value\":true}",
+    "10-23 04:06:36.540  2906  2906 I PressPathTV: [PP] pref {\"key\":\"largeText\",\"value\":true}",
+    "10-23 04:06:38.347  2906  2906 I PressPathTV: [PP] pref {\"key\":\"largeText\",\"value\":false}",
+    "10-23 04:06:39.722  2906  2906 I PressPathTV: [PP] pref {\"key\":\"highContrast\",\"value\":false}"
+  ]
+}
