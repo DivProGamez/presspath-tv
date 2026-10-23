@@ -1,0 +1,78 @@
+PressPath TV release APK
+file: dist\PressPathTV-1.0.0-release.apk
+size: 132820 bytes
+sha256: 00b3b3aa0706caef709b6a3590006f9a1e9dbc4b181b76c54efb844ad1240027
+built: 2026-10-23T02:26:13.719Z
+build-tools: 35.0.0 · platform android-35
+
+== aapt dump badging ==
+package: name='com.presspath.tv' versionCode='10000' versionName='1.0.0' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'
+sdkVersion:'22'
+targetSdkVersion:'35'
+application-label:'PressPath TV'
+application-icon-160:'res/mipmap-mdpi-v4/ic_launcher.png'
+application-icon-240:'res/mipmap-hdpi-v4/ic_launcher.png'
+application-icon-320:'res/mipmap-xhdpi-v4/ic_launcher.png'
+application-icon-480:'res/mipmap-xxhdpi-v4/ic_launcher.png'
+application-icon-640:'res/mipmap-xxxhdpi-v4/ic_launcher.png'
+application: label='PressPath TV' icon='res/mipmap-mdpi-v4/ic_launcher.png' banner='res/drawable-xhdpi-v4/banner.png'
+launchable-activity: name='com.presspath.tv.MainActivity'  label='' icon=''
+leanback-launchable-activity: name='com.presspath.tv.MainActivity'  label='' icon='' banner=''
+feature-group: label=''
+  uses-feature-not-required: name='android.hardware.gamepad'
+  uses-feature-not-required: name='android.hardware.screen.landscape'
+  uses-feature-not-required: name='android.hardware.touchscreen'
+  uses-feature-not-required: name='android.software.leanback'
+main
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+supports-any-density: 'true'
+locales: '--_--'
+densities: '160' '240' '320' '480' '640'
+
+== aapt dump permissions ==
+package: com.presspath.tv
+
+== apksigner verify ==
+Verifies
+Verified using v1 scheme (JAR signing): true
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=PressPath TV, O=PressPath TV, C=US
+Signer #1 certificate SHA-256 digest: c91703738653aeb5ac70fb918debc385281ddd7c2c6ce06f1627191af3e923ec
+Signer #1 certificate SHA-1 digest: f69d2f3d6f8b042c2878664ce9ea4bd595fae9f2
+Signer #1 certificate MD5 digest: 04051e0e2daf6f9d34d79e199480578a
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 3072
+Signer #1 public key SHA-256 digest: 7f88c03c7dc2e2182941448182e4f83e343f2c64827d2254d9c5c19dc16de022
+Signer #1 public key SHA-1 digest: 41c5f8d828b1773067737d6a91c728cb0d0e1d89
+Signer #1 public key MD5 digest: 403e2af86b579ca7dad2637593890df2
+
+== contents ==
+AndroidManifest.xml
+res/drawable-xhdpi-v4/banner.png
+res/mipmap-mdpi-v4/ic_launcher.png
+res/mipmap-hdpi-v4/ic_launcher.png
+res/mipmap-xhdpi-v4/ic_launcher.png
+res/mipmap-xxhdpi-v4/ic_launcher.png
+res/mipmap-xxxhdpi-v4/ic_launcher.png
+resources.arsc
+classes.dex
+assets/web/css/app.css
+assets/web/index.html
+assets/web/js/app.js
+assets/web/js/core/compare.js
+assets/web/js/core/decks.js
+assets/web/js/core/memory.js
+assets/web/js/core/metrics.js
+assets/web/js/core/rules.js
+assets/web/js/core/spatial.js
+assets/web/js/core/store.js
+assets/web/js/core/tasks.js
+assets/web/js/ui/art.js
+META-INF/PRESSPAT.SF
+META-INF/PRESSPAT.RSA
+META-INF/MANIFEST.MF

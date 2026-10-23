@@ -1,0 +1,16 @@
+{
+  "name": "presspath-tv",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PressPath TV — a family TV hub that measures navigation inside its own interface and offers reversible, evidence-based improvements.",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test \"tests/unit/*.test.js\"",
+    "test:e2e": "node --test --test-concurrency=1 \"tests/e2e/*.e2e.mjs\"",
+    "test:all": "npm test && npm run test:e2e",
+    "serve": "node tools/serve.mjs 8787",
+    "build:apk": "node tools/build-apk.mjs",
+    "qa:emulator": "node tools/emulator-qa.mjs"
+  }
+}

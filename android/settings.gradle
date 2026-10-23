@@ -1,0 +1,10 @@
+// Android Studio / Gradle entry point. The verified build path is `node tools/build-apk.mjs`
+// (SDK tools only); this Gradle project builds the same sources for IDE users.
+pluginManagement {
+    repositories { google(); mavenCentral(); gradlePluginPortal() }
+}
+dependencyResolutionManagement {
+    repositories { google(); mavenCentral() }
+}
+rootProject.name = "PressPathTV"
+include ':app'

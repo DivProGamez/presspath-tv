@@ -1,0 +1,46 @@
+
+> presspath-tv@1.0.0 test
+> node --test "tests/unit/*.test.js"
+
+✔ counts every accepted input as a press, split by kind (1.0135ms)
+✔ edge miss = direction press with no target (0.1581ms)
+✔ backtrack = immediate reversal A->B->A, or a Back press (0.2244ms)
+✔ a selection breaks reversal detection across screens (0.1623ms)
+✔ edge misses in between do not hide a reversal (0.1605ms)
+✔ seconds are rounded to 0.1 s from the first input (1.1902ms)
+✔ edgeByTarget groups edge misses by focused element (0.9788ms)
+✔ R1 needs >=5 presses in >=2 baseline runs (1.8313ms)
+✔ R1 ignores adaptive runs and other tasks (0.1828ms)
+✔ R2 needs >=3 edge misses on the same element (0.4865ms)
+✔ apply then undo: suggestion returns, runs are never modified (0.8163ms)
+✔ median handles odd, even and empty sets (0.2047ms)
+✔ Before/After is N/A without both baseline and adaptive runs (0.3308ms)
+✔ Before/After computes medians and signed differences (0.3843ms)
+✔ percentage is N/A (null) when the baseline value is zero (0.1993ms)
+✔ cardinal moves in a grid (1.944ms)
+✔ no target in a direction is an edge (null) (0.151ms)
+✔ in-beam candidates beat closer diagonal ones (0.1731ms)
+✔ 45° cone blocks far diagonal jumps sideways (0.1503ms)
+✔ up/down fall back to the nearest element when nothing is in the beam (0.1792ms)
+✔ availableDirections lists only real targets (0.7735ms)
+✔ memory: 12 cards, six pairs, seeded shuffle is deterministic (0.4788ms)
+✔ memory: match, mismatch, ignored flips and completion (0.3839ms)
+✔ memory: flipping during a pending mismatch hides the pair first (0.2151ms)
+✔ store: round trip, corruption recovery and clear (0.6728ms)
+✔ store: malformed records are dropped, key name is stable (0.1985ms)
+✔ decks: three decks of ten cards with question and answer (0.2254ms)
+✔ there are exactly five guided tasks in the published order (1.5024ms)
+✔ each task completes only on its own genuine app event (0.3711ms)
+✔ focus movement alone never completes a task (0.127ms)
+✔ clock starts on the first input, not when the task is armed (3.1262ms)
+✔ nothing is recorded after the session finishes (0.2192ms)
+✔ run stores per-element edge misses for R2 (0.19ms)
+✔ every task defines a shortcut destination (0.2068ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 161.7799

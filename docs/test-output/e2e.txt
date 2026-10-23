@@ -1,0 +1,51 @@
+
+> presspath-tv@1.0.0 test:e2e
+> node --test --test-concurrency=1 "tests/e2e/*.e2e.mjs" --test-reporter=spec
+
+✔ gamepad D-pad, stick, A and B drive the app (7436.7087ms)
+✔ keyboard alternatives: Backspace is Back, mouse clicks are ignored during tasks (3914.2338ms)
+✔ reduce motion removes focus zoom; high contrast uses a yellow focus ring (3436.1121ms)
+✔ unreadable stored data is set aside and the app starts fresh (2462.6349ms)
+▶ PressPath TV keyboard-only journey (1920x1080)
+  ✔ splash is shown and dismissed by a key press (1852.622ms)
+  ✔ home first launch: honest empty evidence, one focus, fits 1080p (1051.8655ms)
+  ✔ focus restoration after Back (1640.0877ms)
+  ✔ navigation lab empty state (3083.1175ms)
+  ✔ back on Home cancels an armed task without recording (2160.8096ms)
+  ✔ science baseline x2 records real presses; R1 is suggested (7296.4249ms)
+  ✔ R1 preview cites the real runs; apply adds a Home shortcut (1696.3006ms)
+  ✔ adaptive science run uses the shortcut (1797.4623ms)
+  ✔ lab shows the measured evidence strip (798.0026ms)
+  ✔ before/after renders the measured pair (1570.5359ms)
+  ✔ home shows the earned shortcut and the measured comparison (1687.6956ms)
+  ✔ undo restores the original Home; runs are kept (2504.1634ms)
+  ✔ R2: three real edge misses on one element suggest stronger focus (4385.6745ms)
+  ✔ R2 adaptive run shows stronger focus with direction hints (2786.4423ms)
+  ✔ remaining guided tasks complete on their real actions (7268.6477ms)
+  ✔ before/after shows N/A without an adaptive run (1442.8287ms)
+  ✔ settings: high contrast variant, toggles and persistence (4364.7543ms)
+  ✔ large text keeps Home inside the 1080p stage (3155.5684ms)
+  ✔ memory pairs: full game with the remote, completion and replay (12810.1327ms)
+  ✔ flashcards: question, reveal, next, previous, return (5367.6984ms)
+  ✔ progress shows stored measurements only (1455.018ms)
+  ✔ data persists across a reload (1013.2515ms)
+  ✔ clear data needs confirmation; cancel keeps data; confirm clears (6333.5801ms)
+✔ PressPath TV keyboard-only journey (1920x1080) (79526.8651ms)
+▶ PressPath TV at 1280x720
+  ✔ stage scales to fit 720p without page scroll (2218.396ms)
+  ✔ lab renders with one visible focus (1408.948ms)
+  ✔ play renders with one visible focus (1673.0482ms)
+  ✔ learn renders with one visible focus (1671.8596ms)
+  ✔ progress renders with one visible focus (1715.3835ms)
+  ✔ settings renders with one visible focus (1701.3868ms)
+  ✔ same key path gives the same measurement at 720p (3732.4723ms)
+  ✔ large text: lab rows scroll into view with the D-pad, nothing clipped (10042.6666ms)
+✔ PressPath TV at 1280x720 (26225.295ms)
+ℹ tests 37
+ℹ suites 0
+ℹ pass 37
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 123370.828

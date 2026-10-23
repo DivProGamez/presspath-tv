@@ -1,0 +1,224 @@
+{
+  "at": "2026-10-23T02:28:04.806Z",
+  "apk": ".\\dist\\PressPathTV-1.0.0-release.apk",
+  "results": [
+    {
+      "check": "device booted",
+      "pass": true,
+      "detail": "AOSP TV on x86 · API 36 · leanback=true · Physical size: 1920x1080 / Physical density: 320"
+    },
+    {
+      "check": "system WebView",
+      "pass": true,
+      "detail": "com.google.android.webview, 145.0.7632.122"
+    },
+    {
+      "check": "APK installs",
+      "pass": true,
+      "detail": ".\\dist\\PressPathTV-1.0.0-release.apk"
+    },
+    {
+      "check": "package metadata",
+      "pass": true,
+      "detail": "versionName=1.0.0 minSdk=22 targetSdk=35"
+    },
+    {
+      "check": "no INTERNET permission requested",
+      "pass": true
+    },
+    {
+      "check": "launches",
+      "pass": true,
+      "detail": "TotalTime: 644"
+    },
+    {
+      "check": "web app booted from local assets",
+      "pass": true,
+      "detail": {
+        "runs": 0,
+        "adaptations": 0,
+        "native": true
+      }
+    },
+    {
+      "check": "splash dismissed with OK",
+      "pass": true
+    },
+    {
+      "check": "science baseline 1 recorded",
+      "pass": true,
+      "detail": {
+        "task": "science",
+        "phase": "baseline",
+        "presses": 7,
+        "backtracks": 0,
+        "edgeMisses": 0,
+        "seconds": 4.8,
+        "run": "r1"
+      }
+    },
+    {
+      "check": "science baseline 2 recorded",
+      "pass": true,
+      "detail": {
+        "task": "science",
+        "phase": "baseline",
+        "presses": 7,
+        "backtracks": 0,
+        "edgeMisses": 0,
+        "seconds": 3.5,
+        "run": "r2"
+      }
+    },
+    {
+      "check": "R1 applied after preview",
+      "pass": true,
+      "detail": {
+        "id": "a1",
+        "rule": "R1",
+        "task": "science",
+        "target": null
+      }
+    },
+    {
+      "check": "adaptive science run via shortcut",
+      "pass": true,
+      "detail": {
+        "task": "science",
+        "phase": "adaptive",
+        "presses": 3,
+        "backtracks": 0,
+        "edgeMisses": 0,
+        "seconds": 1.2,
+        "run": "r3"
+      }
+    },
+    {
+      "check": "undo restores (adaptation undone)",
+      "pass": true,
+      "detail": {
+        "id": "a1"
+      }
+    },
+    {
+      "check": "memory baseline records 3 edge misses",
+      "pass": true,
+      "detail": {
+        "task": "memory",
+        "phase": "baseline",
+        "presses": 6,
+        "backtracks": 0,
+        "edgeMisses": 3,
+        "seconds": 2.8,
+        "run": "r4"
+      }
+    },
+    {
+      "check": "R2 applied for the edge-miss element",
+      "pass": true,
+      "detail": {
+        "id": "a2",
+        "rule": "R2",
+        "task": "memory",
+        "target": "home-tile-lab"
+      }
+    },
+    {
+      "check": "adaptive memory run with stronger focus",
+      "pass": true,
+      "detail": {
+        "task": "memory",
+        "phase": "adaptive",
+        "presses": 3,
+        "backtracks": 0,
+        "edgeMisses": 0,
+        "seconds": 1.3,
+        "run": "r5"
+      }
+    },
+    {
+      "check": "flashcard reveal with OK",
+      "pass": true,
+      "detail": {
+        "deck": "science",
+        "card": 0
+      }
+    },
+    {
+      "check": "High Contrast toggles with OK",
+      "pass": true,
+      "detail": {
+        "key": "highContrast",
+        "value": true
+      }
+    },
+    {
+      "check": "clear data asks first (no clear on first OK)",
+      "pass": true
+    },
+    {
+      "check": "gamepad A dismisses splash (persisted relaunch)",
+      "pass": true
+    },
+    {
+      "check": "runs and adaptations persist across app restart",
+      "pass": true,
+      "detail": {
+        "runs": 5,
+        "adaptations": 2,
+        "native": true
+      }
+    },
+    {
+      "check": "starts with airplane mode on (no network needed)",
+      "pass": true,
+      "detail": {
+        "runs": 5,
+        "adaptations": 2,
+        "native": true
+      }
+    },
+    {
+      "check": "double Back on Home exits the app",
+      "pass": true,
+      "detail": "topResumedActivity=ActivityRecord{95207509 u0 com.google.android.apps.tv.launcherx/.home.HomeActivity t10}"
+    },
+    {
+      "check": "no crashes in logcat",
+      "pass": true
+    }
+  ],
+  "appLog": [
+    "10-23 03:27:25.756  7920  7920 I PressPathTV: [PP] boot {\"runs\":0,\"adaptations\":0,\"native\":true}",
+    "10-23 03:27:30.366  7920  7920 I PressPathTV: [PP] splash:dismissed",
+    "10-23 03:27:35.804  7920  7920 I PressPathTV: [PP] task:start {\"task\":\"science\",\"phase\":\"baseline\"}",
+    "10-23 03:27:39.436  7920  7920 I PressPathTV: [PP] cards:open {\"deck\":\"science\"}",
+    "10-23 03:27:41.449  7920  7920 I PressPathTV: [PP] cards:reveal {\"deck\":\"science\",\"card\":0}",
+    "10-23 03:27:41.449  7920  7920 I PressPathTV: [PP] task:complete {\"task\":\"science\",\"phase\":\"baseline\",\"presses\":7,\"backtracks\":0,\"edgeMisses\":0,\"seconds\":4.8,\"run\":\"r1\"}",
+    "10-23 03:27:45.051  7920  7920 I PressPathTV: [PP] task:start {\"task\":\"science\",\"phase\":\"baseline\"}",
+    "10-23 03:27:48.798  7920  7920 I PressPathTV: [PP] cards:open {\"deck\":\"science\"}",
+    "10-23 03:27:49.383  7920  7920 I PressPathTV: [PP] cards:reveal {\"deck\":\"science\",\"card\":0}",
+    "10-23 03:27:49.384  7920  7920 I PressPathTV: [PP] task:complete {\"task\":\"science\",\"phase\":\"baseline\",\"presses\":7,\"backtracks\":0,\"edgeMisses\":0,\"seconds\":3.5,\"run\":\"r2\"}",
+    "10-23 03:27:55.836  7920  7920 I PressPathTV: [PP] adapt:apply {\"id\":\"a1\",\"rule\":\"R1\",\"task\":\"science\",\"target\":null}",
+    "10-23 03:27:56.868  7920  7920 I PressPathTV: [PP] task:start {\"task\":\"science\",\"phase\":\"adaptive\"}",
+    "10-23 03:27:59.800  7920  7920 I PressPathTV: [PP] shortcut {\"task\":\"science\"}",
+    "10-23 03:27:59.800  7920  7920 I PressPathTV: [PP] cards:open {\"deck\":\"science\"}",
+    "10-23 03:28:00.415  7920  7920 I PressPathTV: [PP] cards:reveal {\"deck\":\"science\",\"card\":0}",
+    "10-23 03:28:00.415  7920  7920 I PressPathTV: [PP] task:complete {\"task\":\"science\",\"phase\":\"adaptive\",\"presses\":3,\"backtracks\":0,\"edgeMisses\":0,\"seconds\":1.2,\"run\":\"r3\"}",
+    "10-23 03:28:12.517  7920  7920 I PressPathTV: [PP] adapt:undo {\"id\":\"a1\"}",
+    "10-23 03:28:14.767  7920  7920 I PressPathTV: [PP] task:start {\"task\":\"memory\",\"phase\":\"baseline\"}",
+    "10-23 03:28:18.370  7920  7920 I PressPathTV: [PP] task:complete {\"task\":\"memory\",\"phase\":\"baseline\",\"presses\":6,\"backtracks\":0,\"edgeMisses\":3,\"seconds\":2.8,\"run\":\"r4\"}",
+    "10-23 03:28:23.391  7920  7920 I PressPathTV: [PP] adapt:apply {\"id\":\"a2\",\"rule\":\"R2\",\"task\":\"memory\",\"target\":\"home-tile-lab\"}",
+    "10-23 03:28:24.450  7920  7920 I PressPathTV: [PP] task:start {\"task\":\"memory\",\"phase\":\"adaptive\"}",
+    "10-23 03:28:28.249  7920  7920 I PressPathTV: [PP] task:complete {\"task\":\"memory\",\"phase\":\"adaptive\",\"presses\":3,\"backtracks\":0,\"edgeMisses\":0,\"seconds\":1.3,\"run\":\"r5\"}",
+    "10-23 03:28:42.066  7920  7920 I PressPathTV: [PP] cards:open {\"deck\":\"science\"}",
+    "10-23 03:28:42.849  7920  7920 I PressPathTV: [PP] cards:reveal {\"deck\":\"science\",\"card\":0}",
+    "10-23 03:28:49.351  7920  7920 I PressPathTV: [PP] pref {\"key\":\"highContrast\",\"value\":true}",
+    "10-23 03:28:51.290  7920  7920 I PressPathTV: [PP] pref {\"key\":\"highContrast\",\"value\":false}",
+    "10-23 03:28:58.098  8627  8627 I PressPathTV: [PP] boot {\"runs\":5,\"adaptations\":2,\"native\":true}",
+    "10-23 03:29:01.184  8627  8627 I PressPathTV: [PP] splash:dismissed",
+    "10-23 03:29:04.779  8765  8765 I PressPathTV: [PP] boot {\"runs\":5,\"adaptations\":2,\"native\":true}",
+    "10-23 03:29:07.949  8765  8765 I PressPathTV: [PP] splash:dismissed",
+    "10-23 03:29:12.901  8765  8765 I PressPathTV: [PP] exit"
+  ]
+}

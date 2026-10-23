@@ -1,0 +1,15 @@
+PressPath TV 1.0.0 (10000) · build-tools 35.0.0 · android-35 · minSdk 22
+• staging web assets (index.html, css, js) into assets/web
+• aapt2 compile resources
+• aapt2 link manifest + resources + assets
+• javac
+• d8 (release, minApi 22)
+• add classes.dex
+• add web assets (forward-slash entry names)
+• zipalign
+• signing key
+• apksigner sign (v1 + v2 + v3)
+• verify
+
+✔ dist\PressPathTV-1.0.0-release.apk  (129.7 KiB, sha256 00b3b3aa0706caef…)
+  details: dist/apk-info.txt

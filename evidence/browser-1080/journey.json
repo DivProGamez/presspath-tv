@@ -1,0 +1,111 @@
+{
+  "viewport": "1920x1080",
+  "measuredAt": "2026-10-23T02:29:54.822Z",
+  "runs": [
+    {
+      "step": "science baseline 1",
+      "presses": 7,
+      "backtracks": 0,
+      "edgeMisses": 0,
+      "seconds": 1.7
+    },
+    {
+      "step": "science baseline 2",
+      "presses": 7,
+      "backtracks": 0,
+      "edgeMisses": 0,
+      "seconds": 0.9
+    },
+    {
+      "step": "science adaptive (R1 shortcut)",
+      "presses": 3,
+      "backtracks": 0,
+      "edgeMisses": 0,
+      "seconds": 0.3
+    },
+    {
+      "step": "memory baseline (3 deliberate edge presses)",
+      "presses": 6,
+      "backtracks": 0,
+      "edgeMisses": 3,
+      "seconds": 0.8
+    },
+    {
+      "step": "memory adaptive (R2 emphasis)",
+      "presses": 3,
+      "backtracks": 0,
+      "edgeMisses": 0,
+      "seconds": 0.3
+    },
+    {
+      "step": "contrast baseline",
+      "presses": 6,
+      "backtracks": 0,
+      "edgeMisses": 0,
+      "seconds": 0.8
+    },
+    {
+      "step": "largetext baseline",
+      "presses": 7,
+      "backtracks": 0,
+      "edgeMisses": 0,
+      "seconds": 0.9
+    },
+    {
+      "step": "letters baseline",
+      "presses": 4,
+      "backtracks": 0,
+      "edgeMisses": 0,
+      "seconds": 0.5
+    }
+  ],
+  "console": [
+    "[PP] boot {\"runs\":0,\"adaptations\":0,\"native\":false}",
+    "[PP] splash:dismissed",
+    "[PP] cards:open {\"deck\":\"science\"}",
+    "[PP] task:start {\"task\":\"letters\",\"phase\":\"baseline\"}",
+    "[PP] task:cancel {\"task\":\"letters\"}",
+    "[PP] task:start {\"task\":\"science\",\"phase\":\"baseline\"}",
+    "[PP] cards:open {\"deck\":\"science\"}",
+    "[PP] cards:reveal {\"deck\":\"science\",\"card\":0}",
+    "[PP] task:complete {\"task\":\"science\",\"phase\":\"baseline\",\"presses\":7,\"backtracks\":0,\"edgeMisses\":0,\"seconds\":1.7,\"run\":\"r1\"}",
+    "[PP] task:start {\"task\":\"science\",\"phase\":\"baseline\"}",
+    "[PP] cards:open {\"deck\":\"science\"}",
+    "[PP] cards:reveal {\"deck\":\"science\",\"card\":0}",
+    "[PP] task:complete {\"task\":\"science\",\"phase\":\"baseline\",\"presses\":7,\"backtracks\":0,\"edgeMisses\":0,\"seconds\":0.9,\"run\":\"r2\"}",
+    "[PP] adapt:apply {\"id\":\"a1\",\"rule\":\"R1\",\"task\":\"science\",\"target\":null}",
+    "[PP] task:start {\"task\":\"science\",\"phase\":\"adaptive\"}",
+    "[PP] shortcut {\"task\":\"science\"}",
+    "[PP] cards:open {\"deck\":\"science\"}",
+    "[PP] cards:reveal {\"deck\":\"science\",\"card\":0}",
+    "[PP] task:complete {\"task\":\"science\",\"phase\":\"adaptive\",\"presses\":3,\"backtracks\":0,\"edgeMisses\":0,\"seconds\":0.3,\"run\":\"r3\"}",
+    "[PP] adapt:undo {\"id\":\"a1\"}",
+    "[PP] task:start {\"task\":\"memory\",\"phase\":\"baseline\"}",
+    "[PP] task:complete {\"task\":\"memory\",\"phase\":\"baseline\",\"presses\":6,\"backtracks\":0,\"edgeMisses\":3,\"seconds\":0.8,\"run\":\"r4\"}",
+    "[PP] adapt:apply {\"id\":\"a2\",\"rule\":\"R2\",\"task\":\"memory\",\"target\":\"home-tile-lab\"}",
+    "[PP] task:start {\"task\":\"memory\",\"phase\":\"adaptive\"}",
+    "[PP] task:complete {\"task\":\"memory\",\"phase\":\"adaptive\",\"presses\":3,\"backtracks\":0,\"edgeMisses\":0,\"seconds\":0.3,\"run\":\"r5\"}",
+    "[PP] task:start {\"task\":\"contrast\",\"phase\":\"baseline\"}",
+    "[PP] pref {\"key\":\"highContrast\",\"value\":true}",
+    "[PP] task:complete {\"task\":\"contrast\",\"phase\":\"baseline\",\"presses\":6,\"backtracks\":0,\"edgeMisses\":0,\"seconds\":0.8,\"run\":\"r6\"}",
+    "[PP] task:start {\"task\":\"largetext\",\"phase\":\"baseline\"}",
+    "[PP] pref {\"key\":\"largeText\",\"value\":true}",
+    "[PP] task:complete {\"task\":\"largetext\",\"phase\":\"baseline\",\"presses\":7,\"backtracks\":0,\"edgeMisses\":0,\"seconds\":0.9,\"run\":\"r7\"}",
+    "[PP] task:start {\"task\":\"letters\",\"phase\":\"baseline\"}",
+    "[PP] cards:open {\"deck\":\"letters\"}",
+    "[PP] task:complete {\"task\":\"letters\",\"phase\":\"baseline\",\"presses\":4,\"backtracks\":0,\"edgeMisses\":0,\"seconds\":0.5,\"run\":\"r8\"}",
+    "[PP] pref {\"key\":\"largeText\",\"value\":false}",
+    "[PP] pref {\"key\":\"highContrast\",\"value\":false}",
+    "[PP] pref {\"key\":\"reduceMotion\",\"value\":true}",
+    "[PP] pref {\"key\":\"reduceMotion\",\"value\":false}",
+    "[PP] pref {\"key\":\"largeText\",\"value\":true}",
+    "[PP] pref {\"key\":\"largeText\",\"value\":false}",
+    "[PP] memory:complete {\"moves\":6}",
+    "[PP] cards:open {\"deck\":\"science\"}",
+    "[PP] cards:reveal {\"deck\":\"science\",\"card\":0}",
+    "[PP] boot {\"runs\":8,\"adaptations\":2,\"native\":false}",
+    "[PP] splash:dismissed",
+    "[PP] data:cleared",
+    "[PP] boot {\"runs\":0,\"adaptations\":0,\"native\":false}"
+  ]
+}
